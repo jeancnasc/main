@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.jeancnasc.main</groupId>
+    <artifactId>main</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>${project.artifactId}</description>
+    <url>https://github.com/jeancnasc/main</url>
+
+    <developers>
+        <developer>
+            <name>Jean Carneiro do Nascimento</name>
+            <email>jeancnasc@hotmail.com</email>
+            <organization>jeancnasc</organization>
+            <organizationUrl>https://jeancnasc.github.io</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/jeancnasc/main.git</connection>
+        <developerConnection>scm:git:https://github.com/jeancnasc/main.git</developerConnection>
+        <url>https://github.com/jeancnasc/main/tree/master</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <modules>
+        <module>main-dependencies</module>
+        <module>main-parent</module>
+    </modules>
+
+    <properties>
+        <spring.boot.version>2.7.2</spring.boot.version>
+        <spring.cloud.version>2021.0.3</spring.cloud.version>
+    </properties>
+
+</project>
