@@ -64,6 +64,7 @@ jobs:
       - name: Anexando arquivos ao Release
         id: upload
         run: | 
+          find artifacts -name '*.pom' -exec gh release upload $TAG {} \;
           find artifacts -name '*.jar' -exec gh release upload $TAG {} \; 
           find artifacts -name '*.war' -exec gh release upload $TAG {} \; 
           find artifacts -name '*.ear' -exec gh release upload $TAG {} \; 
